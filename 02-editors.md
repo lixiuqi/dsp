@@ -91,7 +91,7 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> Vim, which I can have the same editor experience across graphical and non-graphical environments. I can customize my environment. This is done by editing the Vim configuration file, known as the “dotfile”. Once got dotfile, I can handle indentation, turn vim into distraction-free environment, change the color of the environment, etc.  
 Some keyboard shortcuts for vim:  
-v - start visual mode, mark lines, then do a command (like y-yank) 
-V - start linewise visual mode 
+v - start visual mode, mark lines, then do a command (like y-yank)  
+V - start linewise visual mode   
 Ctrl + v - start visual block mode  
 Esc - exit visual mode
