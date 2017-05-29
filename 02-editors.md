@@ -89,9 +89,9 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> Vim, which I can have the same editor experience across graphical and non-graphical environments. I can customize my environment. This is done by editing the Vim configuration file, known as the “dotfile”. Once got dotfile, I can handle indentation, turn vim into distraction-free environment, change the color of the environment, etc.
-Some keyboard shortcuts for vim:
-v - start visual mode, mark lines, then do a command (like y-yank)
-V - start linewise visual mode
-Ctrl + v - start visual block mode
+>> Vim, which I can have the same editor experience across graphical and non-graphical environments. I can customize my environment. This is done by editing the Vim configuration file, known as the “dotfile”. Once got dotfile, I can handle indentation, turn vim into distraction-free environment, change the color of the environment, etc.  
+Some keyboard shortcuts for vim:  
+v - start visual mode, mark lines, then do a command (like y-yank) 
+V - start linewise visual mode 
+Ctrl + v - start visual block mode  
 Esc - exit visual mode
