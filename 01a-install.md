@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-Python 3.
+>>Python 3.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-Run `python --version` at the command.
+>>Run `python --version` at the command.
 
  
 
