@@ -70,7 +70,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 > > xargs is a command used to build and execute command lines from standard input.  
-The following xargs command is to first find the files and then look for specific keyword on that file using grep command:
+The following xargs command is to first find the files and then look for specific keyword on that file using grep command:  
 find . -name "*.py" | xargs grep "Stock"
 
 
