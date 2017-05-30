@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >  show current working directory path: pwd  
+creating a directory: mkdir (directory)  
+deleting a directory: rm -r (directory)  
+creating a file using `touch` command: touch (file)  
+deleting a file: rm (file)  
+renaming a file: mv (old) (new)
+listing hidden files: ls-a  
+copying a file from one directory to another: cp (file) (directory)  
+move to home directory: cd ~  
+move up one directory: cd ..
 
 ---
 
@@ -34,7 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls`: list directory  
+`ls -a`: list all files including hidden file starting with '.'  
+`ls -l`: list with long format    
+`ls -lh`: list long format with readable file size  
+`ls -lah`: list all files with long format and readable file size  
+`ls -t`: sort by time & date  
+`ls -Glp`: G inhibits the display of group information, l displays the contents in long format, and p shows which files have an indicator such as '/'
 
 ---
 
@@ -42,7 +57,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls-d`: displays only directories   
+`ls-m`: displays the names as a comma-separated list  
+`ls-p`: displays directories with /  
+`ls-q`: displays all nonprinting characters as ?  
+`ls-r`: displays files in reverse order  
 
 ---
 
@@ -50,7 +69,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs is a command used to build and execute command lines from standard input.  
+The following xargs command is to first find the files and then look for specific keyword on that file using grep command:
+find . -name "*.py" | xargs grep "Stock"
+
+
 
  
 
