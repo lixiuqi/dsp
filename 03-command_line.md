@@ -24,7 +24,7 @@ creating a directory: mkdir (directory)
 deleting a directory: rm -r (directory)  
 creating a file using `touch` command: touch (file)  
 deleting a file: rm (file)  
-renaming a file: mv (old) (new)
+renaming a file: mv (old) (new)  
 listing hidden files: ls-a   
 copying a file from one directory to another: cp (file) (directory)    
 move to home directory: cd ~  
