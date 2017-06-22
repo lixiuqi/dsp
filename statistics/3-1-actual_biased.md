@@ -1,7 +1,6 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
 >>
-
 from __future__ import print_function
 
 import numpy as np
@@ -14,11 +13,6 @@ import thinkplot
 
 
 def PmfMean(pmf):
-    """Computes the mean of a PMF.
-
-    Returns:
-        float mean
-    """
     mean = 0.0
     for x, p in pmf.d.items():
         mean += p * x
@@ -26,15 +20,6 @@ def PmfMean(pmf):
 
 
 def PmfVar(pmf, mu=None):
-    """Computes the variance of a PMF.
-
-    Args:
-        mu: the point around which the variance is computed;
-            if omitted, computes the mean
-
-    Returns:
-        float variance
-    """
     if mu is None:
         mu = pmf.Mean()
 
@@ -45,12 +30,6 @@ def PmfVar(pmf, mu=None):
 
 
 def Diffs(t):
-    """List of differences between the first elements and others.
-
-    t: list of numbers
-    
-    returns: list of numbers
-    """
     first = t[0]
     rest = t[1:]
     diffs = [first - x for x in rest]
@@ -58,10 +37,6 @@ def Diffs(t):
 
 
 def PairWiseDifferences(live):
-    """Summarize pairwise differences for children of the same mother.
-
-    live: DataFrame of pregnancy records for live births
-    """
     live = live[live.prglngth >= 37]
     preg_map = nsfg.MakePregMap(live)
 
@@ -81,10 +56,6 @@ def PairWiseDifferences(live):
 
 
 def main(script):
-    """Tests the functions in this module.
-
-    script: string script name
-    """
     live, firsts, others = first.MakeFrames()
     PairWiseDifferences(live)
 
