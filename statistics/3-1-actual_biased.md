@@ -12,36 +12,36 @@ import thinkstats2
 import thinkplot
 
 
-def PmfMean(pmf):
+def PmfMean(pmf):  
     mean = 0.0
-    for x, p in pmf.d.items():
+    for x, p in pmf.d.items():  
         mean += p * x
     return mean
 
 
-def PmfVar(pmf, mu=None):
-    if mu is None:
+def PmfVar(pmf, mu=None):  
+    if mu is None:  
         mu = pmf.Mean()
 
     var = 0.0
-    for x, p in pmf.d.items():
+    for x, p in pmf.d.items():  
         var += p * (x - mu) ** 2
     return var
 
 
-def Diffs(t):
+def Diffs(t):  
     first = t[0]
     rest = t[1:]
     diffs = [first - x for x in rest]
     return diffs
 
 
-def PairWiseDifferences(live):
+def PairWiseDifferences(live):  
     live = live[live.prglngth >= 37]
     preg_map = nsfg.MakePregMap(live)
 
     diffs = []
-    for caseid, indices in preg_map.items():
+    for caseid, indices in preg_map.items():  
         lengths = live.loc[indices].prglngth.values
         if len(lengths) >= 2:
             diffs.extend(Diffs(lengths))
@@ -55,7 +55,7 @@ def PairWiseDifferences(live):
                    ylabel='PMF')
 
 
-def main(script):
+def main(script):  
     live, firsts, others = first.MakeFrames()
     PairWiseDifferences(live)
 
@@ -72,6 +72,6 @@ def main(script):
     print('%s: All tests passed.' % script)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     main(*sys.argv)
 
