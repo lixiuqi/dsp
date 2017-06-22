@@ -1,5 +1,6 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
+```python
 from __future__ import print_function
 
 import numpy as np
@@ -74,3 +75,4 @@ def main(script):
 if __name__ == '__main__':  
     main(*sys.argv)
 
+```
